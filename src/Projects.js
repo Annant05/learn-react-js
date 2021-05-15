@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PROJECTS from './data/projects';
 
 
-
 class Project extends Component {
     render() {
         console.log('this.props', this.props);
@@ -20,6 +19,7 @@ class Project extends Component {
     }
 }
 
+
 class Projects extends Component {
     render() {
         return (
@@ -34,10 +34,11 @@ class Projects extends Component {
                         })
                     }
                 </div>
-            </div >
+            </div>
         )
     }
 }
+
 
 
 export default Projects;

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
-
-
+import SocailProfiles from './SocailProfiles';
+import './index.css';
+import profile_img from './assets/profile.png'
 
 class App extends Component {
     state = { displayBio: false };
@@ -13,6 +14,7 @@ class App extends Component {
 
         return (
             <div>
+                <img src={profile_img} alt="ProfileImage" className="profile" />
                 <h1>Hello! </h1>
                 <p>My name is Annant, I am learning React.</p>
                 <p>I am investing my time to learn something new. Wish me luck!</p>
@@ -32,6 +34,8 @@ class App extends Component {
                 }
                 <hr />
                 <Projects />
+                <hr />
+                <SocailProfiles />
             </div>
         )
     }
