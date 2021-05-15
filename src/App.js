@@ -1,35 +1,15 @@
 import React, { Component } from 'react';
+import Projects from './Projects';
 
-// class RegularClass { }
-// class ComponentClass extends Component { }
 
-// const regularClassInstance = new RegularClass();
-// const componentClassInstance = new ComponentClass();
-
-// console.log('regularClassInstance', regularClassInstance);
-// console.log('componentClassInstance', componentClassInstance);
 
 class App extends Component {
     state = { displayBio: false };
-    // constructor() {
-    //     super();
-    //     this.state = { displayBio: false };
-    //     console.log('Component this', this);
-
-    //     // this.readMore = () => {
-    //     //     console.log('readMore this', this);
-    //     //     this.setState({ displayBio: true });
-
-    //     // }
-    //     //  learn about bind method.
-    //     this.toggleDisplayBio = this.toggleDisplayBio.bind(this)
-    // }
 
     toggleDisplayBio = () => {
         this.setState({ displayBio: !this.state.displayBio });
     }
     render() {
-        // const bio = 
 
         return (
             <div>
@@ -50,6 +30,8 @@ class App extends Component {
                         </div>
                     )
                 }
+                <hr />
+                <Projects />
             </div>
         )
     }
