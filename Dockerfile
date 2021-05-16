@@ -1,8 +1,10 @@
-FROM node:14.17.0-alpine3.10
+FROM node:12-alpine3.10
 
 WORKDIR /usr/src/app/my-app
 COPY ./my-app/package*.json ./
-RUN npm install --silent
+RUN npm install
 
-EXPOSE 3000
+RUN apk add util-linux
+
+EXPOSE 1234
 CMD ["npm", "start"]

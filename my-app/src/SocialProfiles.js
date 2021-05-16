@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SOCIAL_PROFILES from './data/socialProfiles';
 
-class SocailProfile extends Component {
+class SocialProfile extends Component {
     render() {
 
         const { link, image } = this.props.socialprofile;
@@ -16,7 +16,7 @@ class SocailProfile extends Component {
     }
 }
 
-class SocailProfiles extends Component {
+class SocialProfiles extends Component {
     render() {
         return (
             <div>
@@ -25,7 +25,7 @@ class SocailProfiles extends Component {
                     {
                         SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
                             return (
-                                <SocailProfile key={SOCIAL_PROFILE.id} socialprofile={SOCIAL_PROFILE} />
+                                <SocialProfile key={SOCIAL_PROFILE.id} socialprofile={SOCIAL_PROFILE} />
                             );
                         })
                     }
@@ -35,4 +35,4 @@ class SocailProfiles extends Component {
     }
 }
 
-export default SocailProfiles;
+export default SocialProfiles;

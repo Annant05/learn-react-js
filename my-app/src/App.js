@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
-import SocailProfiles from './SocailProfiles';
+import SocialProfiles from './SocialProfiles';
 import './index.css';
 import profile_img from './assets/profile.png'
 
@@ -35,7 +35,7 @@ class App extends Component {
                 <hr />
                 <Projects />
                 <hr />
-                <SocailProfiles />
+                <SocialProfiles />
             </div>
         )
     }
