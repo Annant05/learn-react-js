@@ -11,10 +11,9 @@ class App extends Component {
         tracks: []
     };
 
-
     searchArtist = artistQuery => {
 
-        fetch(`${API_ADDRESS}/artist/${this.state.artistQuery}`)
+        fetch(`${API_ADDRESS}/artist/${artistQuery}`)
             .then(response => response.json())
             .then(json => {
 
